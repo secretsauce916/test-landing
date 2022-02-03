@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+body {
+    width: 100vw;
+    overflow-x: hidden;
+}
+.cover {
+    max-height: 666px;
+    min-height: 100vh;
+    background-color: rgba(0,0,0,.3);
+
+}
+.cover::before {
+    content:"";
+    background: url('../images/slowmo.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 666px;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -11111; 
+}
+.cover-content {
+    z-index: 0;
+}
+
+.marquee-box {
+    width: 100vw;
+    background-color: white;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    height: 50px;
+    overflow-x: hidden;
+
+}
+.track {
+    position: absolute;
+    white-space: nowrap;
+    will-change: transform;
+    animation: marquee 32s linear infinite;
+  }
+  
+  @keyframes marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
+  .track h2{
+      text-transform: uppercase;
+padding-top: 5px;
+font-family: 'VT323', monospace;
+
+
+  }
+
+  .container-upper {
+      border: 1px solid #EDDBFF;
+      border-radius: 5px;
+      padding: 10px;
+    color: #EDDBFF;
+      margin-top: 1em;
+      /* margin-left: 1em; */
+      box-shadow: 5px 5px #EDDBFF;
+      font-family: 'VT323', monospace;
+      max-width: 350px;
+      text-align: justify;
+  }
+
+  .n-link {
+    margin-top: 2em;
+        margin-bottom: 1em;
+  }
+  .n-link a.text-link{
+    border: 1px solid #EDDBFF;
+    border-radius: 100%;
+    margin-top: 1em;
+
+  color: #EDDBFF;
+    font-family: 'Eurostile', monospace;
+    font-size: 1.5em;
+    padding: 1rem;
+    width: 150px;
+  color: #EDDBFF;
+  text-decoration: none;
+  align-items: center;
+
+  }
+  .n-link a i{
+      color: #EDDBFF;
+      font-size: 2.5em;
+      padding: .25em;
+  }
+
+  .n-link a:hover {
+
+      text-decoration: underline;
+  }
