@@ -16,15 +16,16 @@ body {
     content:"";
     background: url('../images/slowmo.gif');
     background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 100vh;
-    max-height: 666px;
+    background-size: contain;
+    background-size: 100% auto;
+    /* min-height: 100vh;
+    max-height: 666px; */
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;
     position: absolute;
-    object-fit: cover;
+    object-fit: contain;
     z-index: -11111; 
     overflow-y: hidden;
 }
